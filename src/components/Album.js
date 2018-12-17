@@ -12,7 +12,8 @@ class Album extends Component {
     this.state = {
       album: album,
       currentSong: album.songs[0],
-      isPlaying: false
+      isPlaying: false,
+      //hover: false
     };
 
     this.audioElement = document.createElement("audio");
@@ -32,6 +33,12 @@ class Album extends Component {
         isPlaying: false
       })
     }
+
+    //onHover() {
+      //this.setState({
+        //hover: true
+      //})
+  //  }
 
     setSong(song) {
       this.audioElement.src = song.audioSrc;
@@ -71,7 +78,8 @@ class Album extends Component {
       <tbody>
             {this.state.album.songs.map((song,index) =>
 
-             <tr key ={index} className="song" onClick={() => this.handleSongClick(song)}>Song Number {[index + 1]}
+             <tr key ={index} className="song" onClick={() => this.handleSongClick(song)}>
+             <td>{[index +1]}</td>
               <td>{song.title}</td>
               <td>{song.duration}</td>
               </tr>
@@ -92,3 +100,5 @@ class Album extends Component {
 }
 
 export default Album;
+//music
+//comment
