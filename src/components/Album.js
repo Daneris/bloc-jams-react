@@ -81,7 +81,7 @@ class Album extends Component {
 
       }else {
         return (
-          <td>{index+1}</td>
+          {index+1}
         )
       }
 
