@@ -68,15 +68,16 @@ class Album extends Component {
       if (this.state.isPlaying && this.state.currentSong === song) {
         return (
 
-            <i className="icon ion-md-play"></i>
+          <td>
+         <button><span className="icon ion-md-play"></span></button></td>
 
               )
 
       }else if (!this.state.isPlaying && this.state.currentSong === song){
 
       return(
-
-            <i className="icon ion-md-pause"></i>
+        <td>
+          <button><span className="icon ion-md-pause"></span></button></td>
             )
 
       }else {
@@ -112,7 +113,7 @@ class Album extends Component {
 
 
           <tbody>
-            <button><span className="icon ion-md-play"></span></button>
+
 
           {this.state.album.songs.map((song,index) =>
             <tr onMouseEnter={() => this.hoverOn(song)}
