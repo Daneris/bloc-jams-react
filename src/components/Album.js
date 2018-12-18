@@ -67,24 +67,21 @@ class Album extends Component {
       //set class here
       if (this.state.song === this.state.isPlaying && this.state.song === song) {
         return (
-          <div>
-            <i className="icon ion-md-play"></i>
-          </div>
+          <td>
+            <button><span className="icon ion-md-pause"></span></button></td>
 
-        )
+              )
 
       }else if (song === this.state.hover){
 
       return(
-        <div>
-          <i className="icon ion-md-pause"></i>
-        </div>
-    )
+          <td>
+            <button><span className="icon ion-md-play"></span></button></td>
+            )
 
       }else {
-        return [index + 1]
+          <td>{index+1}</td>
       }
-
 
 
     }
@@ -118,7 +115,7 @@ class Album extends Component {
             <tr onMouseEnter={() => this.hoverOn(song)}
               onMouseLeave={() => this.hoverOff(song)}
             key={index} className="song" onClick={() => this.handleSongClick(song)}>
-              <td>{this.renderButton()}</td>
+              <td>{this.renderButton(song,index)}</td>
               <td>{song.title}</td>
               <td>{song.duration}</td>
             </tr>
@@ -140,4 +137,5 @@ class Album extends Component {
 
 export default Album;
 //music
+//comment
 //comment
