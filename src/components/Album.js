@@ -63,15 +63,26 @@ class Album extends Component {
     }
 
 
-    hovering(song) {
+    renderButton(song, index) {
       //set class here
-      if (this.state.song === !this.state.isPlaying) {
-        <i className="icon ion-ios-play">{this.hoverOn()}</i>
+      if (this.state.song === this.state.isPlaying && this.state.song === song) {
+        return (
+          <div>
+            <i className="icon ion-md-play"></i>
+          </div>
 
-      }else if (this.state.song === this.state.isPlaying){
-        <i className="icon ion-ios-pause">{this.hoverOn()}</i>
+        )
+
+      }else if (song === this.state.hover){
+
+      return(
+        <div>
+          <i className="icon ion-md-pause"></i>
+        </div>
+    )
+
       }else {
-        this.hoverOff();
+        return [index + 1]
       }
 
 
@@ -104,10 +115,10 @@ class Album extends Component {
           <tbody>
 
           {this.state.album.songs.map((song,index) =>
-            <tr onMouseEnter={() => this.hovering(song)}
-              onMouseLeave={() => this.hovering(song)}
+            <tr onMouseEnter={() => this.hoverOn(song)}
+              onMouseLeave={() => this.hoverOff(song)}
             key={index} className="song" onClick={() => this.handleSongClick(song)}>
-              <td >{[index +1]}</td>
+              <td>{this.renderButton()}</td>
               <td>{song.title}</td>
               <td>{song.duration}</td>
             </tr>
