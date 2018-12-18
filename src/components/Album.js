@@ -65,23 +65,23 @@ class Album extends Component {
 
     renderButton(song, index) {
       //set class here
-      if (this.state.song === this.state.isPlaying && this.state.song === song) {
+      if (this.state.isPlaying && this.state.currentSong === song) {
         return (
-          <td>
-            <button><span className="icon ion-md-play"></span></button></td>
+
+            <i className="icon ion-md-play"></i>
 
               )
 
-      }else if (this.state.song === !this.state.isPlaying === song){
+      }else if (!this.state.isPlaying && this.state.currentSong === song){
 
       return(
-          <td>
-            <button><span className="icon ion-md-pause"></span></button></td>
+
+            <i className="icon ion-md-pause"></i>
             )
 
       }else {
         return (
-          {index+1}
+          <span>{index + 1}</span>
         )
       }
 
@@ -112,6 +112,7 @@ class Album extends Component {
 
 
           <tbody>
+            <button><span className="icon ion-md-play"></span></button>
 
           {this.state.album.songs.map((song,index) =>
             <tr onMouseEnter={() => this.hoverOn(song)}
@@ -128,6 +129,7 @@ class Album extends Component {
       </tbody>
 
 
+
       </table>
 
       </section>
@@ -138,6 +140,3 @@ class Album extends Component {
 }
 
 export default Album;
-//music
-//comment
-//comment
