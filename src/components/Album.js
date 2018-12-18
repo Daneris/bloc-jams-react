@@ -68,19 +68,21 @@ class Album extends Component {
       if (this.state.song === this.state.isPlaying && this.state.song === song) {
         return (
           <td>
-            <button><span className="icon ion-md-pause"></span></button></td>
+            <button><span className="icon ion-md-play"></span></button></td>
 
               )
 
-      }else if (song === this.state.hover){
+      }else if (this.state.song === !this.state.isPlaying === song){
 
       return(
           <td>
-            <button><span className="icon ion-md-play"></span></button></td>
+            <button><span className="icon ion-md-pause"></span></button></td>
             )
 
       }else {
+        return (
           <td>{index+1}</td>
+        )
       }
 
 
