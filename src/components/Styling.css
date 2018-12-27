@@ -1,0 +1,92 @@
+
+.landing {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: flex;
+  background-color: #EADE78;
+
+}
+
+.landingImage {
+
+  background-color: #FFF;
+  background-image: url(./style/02.jpg);
+  width: 900px;
+  height: 1000px;
+  flex: 1;
+
+}
+
+.selling-points {
+  flex: 1;
+
+}
+
+.hero-title{
+  flex: 1;
+}
+
+.landing-rectangle {
+  flex: 1;
+  background-color: #C1B6B6;
+}
+
+
+
+
+
+
+.library {
+  display: flex;
+  background-color: #E7DCEF;
+
+}
+
+.library-rectangle {
+  flex: 1;
+  background-color: #EADE78;
+}
+.library-rectangle2 {
+  flex: 1;
+  background-color: #EADE78;
+}
+
+
+
+
+
+
+.container {
+  display: flex;
+
+  }
+
+.album-cover {
+  flex:1;
+
+}
+
+
+.album{
+  flex: 1;
+  justify-content: center;
+}
+
+.player-bar {
+  flex: 1;
+  margin-bottom: auto;
+  margin-top: auto;
+  background-color: #E7DCEF;
+}
+
+.album-details {
+  background-color: #E7DCEF;
+}
+
+.song-list{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  background-color: #EADE78;
+}
