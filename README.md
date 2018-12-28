@@ -10,7 +10,7 @@ Complete
 
 
 ### Screenshots
-![Screenshot of page from project. It has an album cover, and music player controls](https://imgur.com/a/OCiY2Em "")
+![Screenshot of page from project. It has an album cover, and music player controls](https://imgur.com/a/OCiY2Em)
 
 ### Tech/framework used
 
