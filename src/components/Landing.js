@@ -29,8 +29,6 @@ const Landing = () => (
   </section>
   </section>
 
-
-
 )
 
 
