@@ -10,13 +10,16 @@ Complete
 
 
 ### Screenshots
-![Screenshot of page from project. It has an album cover, and music player controls](https://imgur.com/a/OCiY2Em)
+[![Music Player controls](https://ci.appveyor.com/api/projects/status/yc3leb1t5t6ue01i?svg=true)](https://imgur.com/a/Xj3O7dK)
+
+
 
 ### Tech/framework used
 
 Built with:
 
 React
+React Router
 
 ### Features
 Album cover image, the album's title, the artist's name, and some general release info.
