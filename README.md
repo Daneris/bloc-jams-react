@@ -1,5 +1,33 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+### Project title
+Jams, a music player.
+
+
+### Build status
+Complete
+
+
+### Screenshots
+![Screenshot of page from project. It has an album cover, and music player controls](https://imgur.com/a/OCiY2Em)
+
+### Tech/framework used
+
+Built with:
+
+React
+
+### Features
+Album cover image, the album's title, the artist's name, and some general release info.
+List of the album's songs.
+Click on a song, it plays.
+Click on a playing song, it pauses.
+Hover over a song, it displays a "play" button in place of the song number.
+The currently playing song displays a "pause" button in place of the song number.
+A paused song displays a "play" button in place of the song number.
+
+
 ## Available Scripts
 
 In the project directory, you can run:
