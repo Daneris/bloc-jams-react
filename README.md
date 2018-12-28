@@ -16,7 +16,6 @@ Complete
 
 ### Tech/framework used
 
-Built with:
 
 React
 React Router
